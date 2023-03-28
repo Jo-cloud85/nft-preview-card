@@ -1,0 +1,161 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    height: 100vh;
+    background-color: hsl(217, 54%, 11%);
+    font-size: 18px;
+    font-family: "Outfit";
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    background-color: hsl(216, 50%, 16%);
+    height: 600px;
+    width: 350px; 
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 22px;
+}
+
+.card-image {
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.image-container {
+    position: relative;
+}
+  
+.overlay {
+    position: absolute;
+    border-radius: 5px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 95%;
+    background-color: rgba(0, 255, 247, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.5s;
+}
+
+.overlay:hover {
+    background-color: rgba(0, 255, 247, 0.5);
+    cursor: pointer;
+}
+
+.eye-icon {
+    transition: opacity 0.2s;
+    padding: 120px; /* To allow wider area of the eye-icon for cursor to reach and take effect */
+    opacity: 0;
+}
+
+.eye-icon:hover {
+    opacity: 1;
+}
+
+.card-title {
+    font-weight: 600;
+    color: hsl(0, 0%, 100%);
+    padding: 10px 0 10px 0;
+    font-size: 20px;
+    letter-spacing: 0.8px;
+}
+
+.card-description {
+    font-weight: 300;
+    color: hsl(215, 51%, 70%);
+    padding: 10px 0 10px 0;
+    line-height: 25px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0 10px 0;
+}
+
+.card-details {
+    width: 140px;
+}
+
+#eth-icon {
+    width: 8%;
+    height: 8%;
+    margin-right: 7px;
+}
+
+#card-price {
+    color: hsl(178, 100%, 50%);
+    display: flex;
+    align-items: center;
+}
+
+
+#clock-icon {
+    width: 14%;
+    height: 14%;
+    margin-right: 7px;
+}
+
+
+#days-left {
+    color: hsl(215, 51%, 70%);
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+hr {
+    margin: 15px 0 15px 0;
+    border: solid hsl(215, 32%, 27%) 0.2px;
+    border-bottom: none;
+
+}
+
+.card-author {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    color: hsl(215, 51%, 70%);
+}
+
+.avatar {
+    width:10%;
+    height:10%;
+    border: solid hsl(0, 0%, 100%) 0.2px;
+    border-radius: 100%;
+    margin-right: 15px;
+}
+
+.name {
+    color: hsl(0, 0%, 100%);
+}
+
+.name:hover,
+.card-title:hover {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+.attribution { 
+    color:hsl(228, 45%, 44%);
+    font-size: 11px; 
+    text-align: center; 
+    margin-top: 15px;
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+    text-decoration: none;
+}
